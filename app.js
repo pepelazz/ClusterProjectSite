@@ -29,7 +29,17 @@ $(function() {
   }));
 });
 
-fixSize = (function() {});
+fixSize = (function() {
+  var logoTextEl;
+  $('#first-page-banner').css({
+    height: window.innerHeight - $('.nav').height()
+  });
+  logoTextEl = $('.logo-text', '#first-page-banner');
+  $('.rocket-picture').css({
+    height: $('.smoke-picture').offset().top - (logoTextEl.offset().top + logoTextEl.innerHeight())
+  });
+  console.log(logoTextEl.offset().top, logoTextEl.height(), $('.smoke-picture').offset().top);
+});
 
 
 
