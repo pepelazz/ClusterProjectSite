@@ -274,6 +274,10 @@ strong {
 .article-header-bg .article-title small {
   font-size: 1.25rem;
 }
+.article-header-bg h2 {
+  width: 700px;
+  margin: 0 auto;
+}
 
 .section-content {
   font-family: "liberationserif-regular";
@@ -293,6 +297,10 @@ strong {
 }
 .section-content .full-width {
   width: 100%;
+}
+.section-content .center-img {
+  display: block;
+  margin: 0 auto;
 }
 .section-content .tip-text {
   cursor: pointer;
