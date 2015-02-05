@@ -278,6 +278,13 @@ strong {
   width: 700px;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  .article-header-bg h2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5rem;
+  }
+}
 
 .section-content {
   font-family: "liberationserif-regular";
@@ -330,6 +337,19 @@ strong {
 .layoutSingleColumn {
   margin: 0 auto;
   width: 700px;
+  box-sizing: border-box;
+}
+@media (max-width: 1240px) {
+  .layoutSingleColumn {
+    width: 100%;
+    margin: 0;
+    padding-left: 19rem;
+  }
+}
+@media (max-width: 992px) {
+  .layoutSingleColumn {
+    padding: 0 5rem;
+  }
 }
 
 .clear-both {
@@ -368,8 +388,13 @@ strong {
   font-size: 1rem;
   list-style: none;
 }
+@media (max-width: 992px) {
+  .article-menu {
+    display: none;
+  }
+}
 .article-menu li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .article-menu li a {
   text-decoration: none;
