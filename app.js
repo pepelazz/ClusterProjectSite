@@ -98,7 +98,7 @@ $(function() {
 });
 
 fixSize = (function() {
-  var logoTextEl;
+  var companyListSidebar, logoTextEl;
   if ($('#first-page-banner').length > 0) {
     $('#first-page-banner').css({
       height: window.innerHeight
@@ -107,6 +107,10 @@ fixSize = (function() {
     $('.rocket-picture').css({
       height: $('.smoke-picture').offset().top - (logoTextEl.offset().top + logoTextEl.innerHeight())
     });
+  }
+  if ($('ul.company-list').length > 0) {
+    companyListSidebar = $('ul.company-list');
+    companyListSidebar.css('height', $(window).innerHeight());
   }
 });
 
